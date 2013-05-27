@@ -7,7 +7,7 @@
     "license": "Apache-2.0",
     "extra": {
         "branch-alias": {
-            "dev-master": "percona"
+            "dev-master": "0.1.x-dev"
         }
     }
 }
