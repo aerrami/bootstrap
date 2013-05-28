@@ -3,30 +3,35 @@
   li {
     background-color: @perconaOrange;
     color: @white;
-    margin: 4px 0 4px;
+    margin: 5px 0 5px;
 
     .orange-border(1px, 0, 1px, 1px);
-    .border-left-radius(6px);
+    .border-left-radius(4px);
     .border-right-radius(0);
 
     a, a:hover, a:focus {
-      .border-left-radius(6px);
+      .border-left-radius(4px);
       .border-right-radius(0);
-      background-color: @perconaOrange;
+      background-color: transparent;
       color: @white;
 
-      padding-top: 3px;
-      padding-bottom: 3px;
+      padding-top: 4px;
+      padding-bottom: 4px;
     }
+  }
+
+  li:hover {
+    background-color: lighten(@perconaOrange, 5%);
   }
 
   li.active {
     background-color: @white;
-    color: @perconaOrange;
+    color: @textColor;
 
     a, a:hover, a:focus {
-      background-color: @white;
-      color: @perconaOrange;
+      background-color: transparent;
+      color: @textColor;
+      font-weight: bold;
     }
   }
 }
