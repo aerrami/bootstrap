@@ -1,0 +1,23 @@
+.navbar-orange {
+  background-color: @perconaLighterOrange;
+  border-left: none;
+  border-right: none;
+
+  border-top: solid 1px lighten(@perconaOrange, 20%);
+  border-bottom: solid 1px @perconaLightOrange;
+
+  .border-radius(0);
+
+  .navbar-inner {
+    background-color: @perconaLighterOrange !important;
+    min-height: @navbarHeight / 2;
+  }
+
+  .divider-vertical {
+    height: (@navbarHeight * 0.6);
+    margin: 2px 9px;
+    border-left: solid 1px @perconaLightOrange;
+    border-right: solid 1px @perconaLightOrange;
+  }
+}
+
