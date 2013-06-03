@@ -71,3 +71,37 @@
     }
   }
 }
+
+.navbar-orange {
+  .nav-tabs {
+    margin-top: 13px;
+    border: none;
+
+    li {
+      margin: 0 5px -1px;
+
+      a {
+        background-color: @perconaLightOrange;
+        color: @linkColor;
+        padding: 2px 15px 0;
+        text-shadow: none;
+
+        &:hover {
+          background-color: @white;
+          color: @linkColor;
+          border: solid 1px @perconaLightOrange;
+          border-bottom: none;
+        }
+      }
+
+      &.active {
+        a, a:hover {
+          border: solid 1px @perconaLightOrange;
+          border-bottom: solid 1px @white;
+          background-color: @white;
+          color: @linkColor;
+        }
+      }
+    }
+  }
+}
